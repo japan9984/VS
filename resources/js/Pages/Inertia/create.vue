@@ -1,10 +1,7 @@
 <script setup>
     import { reactive } from 'vue';
     import { Inertia } from '@inertiajs/inertia';
-
-    defineProps({
-        errors: Object
-    })
+    import TextInput from '@/Components/TextInput.vue';
 
     const form = reactive({
         title: null,

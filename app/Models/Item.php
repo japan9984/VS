@@ -13,6 +13,6 @@ class Item extends Model
         'name',
         'memo',
         'price',
-        'is_sealing',
+        'is_selling',
     ];
 }
