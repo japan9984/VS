@@ -40,10 +40,10 @@ const showingNavigationDropdown = ref(false);
                                     作業項目
                                 </NavLink>
                                 <NavLink :href="route('customers.index')" :active="route().current('customers.index')">
-                                    参加者
+                                    メンバー
                                 </NavLink>
                                 <NavLink :href="route('analysis')" :active="route().current('analysis')">
-                                    VS
+                                    分析
                                 </NavLink>
                             </div>
                         </div>
@@ -102,10 +102,10 @@ const showingNavigationDropdown = ref(false);
                             作業項目
                         </ResponsiveNavLink>
                         <ResponsiveNavLink :href="route('customers.index')" :active="route().current('customers,index')">
-                            参加者
+                            メンバー
                         </ResponsiveNavLink>
                         <ResponsiveNavLink :href="route('analysis')" :active="route().current('analysis')">
-                            VS
+                            分析
                         </ResponsiveNavLink>
                     </div>
 

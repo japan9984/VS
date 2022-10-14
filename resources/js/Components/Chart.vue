@@ -15,7 +15,7 @@ const barData = reactive({
  labels: labels,
  datasets: [
  {
- label: '売上',
+ label: 'ポイント',
  data: totals,
  backgroundColor: "rgb(75, 192, 192)",
  tension: 0.1,

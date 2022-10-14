@@ -91,7 +91,7 @@
         </tbody>
     </table>
     <br>
-    合計：{{ totalPrice }}円<br>
+    合計：{{ totalPrice }}ポイント<br>
     <button>登録する</button>
 </form>
 </template>

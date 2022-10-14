@@ -24,7 +24,7 @@
         <AuthenticatedLayout>
             <template #header>
                 <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                    顧客一覧
+                    メンバー一覧
                 </h2>
             </template>
 
@@ -40,7 +40,7 @@
                                         <input type="text" name="search" v-model="search">
                                         <button class="bg-blue-300 text-white py-2 px-2" @click="searchCustomers">検索</button>
                                     </div>
-                                <Link as="button" :href="route('customers.create')" class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">顧客登録</Link>
+                                <Link as="button" :href="route('customers.create')" class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">メンバー登録</Link>
                                 <!-- <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Button</button> -->
                                 </div>
                                 <div class="lg:w-2/3 w-full mx-auto overflow-auto">

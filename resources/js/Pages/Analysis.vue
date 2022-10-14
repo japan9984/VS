@@ -80,7 +80,7 @@ data.type = res.data.type
                                 <th>ランク</th>
                                 <th>R (○日以内)</th>
                                 <th>F (○回以上)</th>
-                                <th>M (○円以上)</th>
+                                <th>M (○ポイント以上)</th>
                                 </tr>
                                 </thead>
                                 <tbody>

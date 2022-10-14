@@ -19,12 +19,12 @@
 
     <template>
 
-        <Head title="購買履歴 詳細画面" />
+        <Head title="ポイント履歴 詳細画面" />
 
         <AuthenticatedLayout>
             <template #header>
                 <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                    購買履歴 詳細画面
+                    ポイント履歴 詳細画面
                 </h2>
             </template>
 
@@ -51,7 +51,7 @@
         </div>
         <div class="p-2 w-full">
           <div class="relative">
-              <label for="customer" class="leading-7 text-sm text-gray-600">会員名</label>
+              <label for="customer" class="leading-7 text-sm text-gray-600">メンバー</label>
               <div id="date" name="date" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                 {{ props.order[0].customer_name}}
             </div>
@@ -65,10 +65,10 @@
                                     <thead>
                                     <tr>
                                         <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">ID</th>
-                                        <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">商品名</th>
-                                        <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">金額</th>
-                                        <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">数量</th>
-                                        <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">小計</th>
+                                        <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">作業項目</th>
+                                        <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">ポイント</th>
+                                        <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">回数</th>
+                                        <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">合計</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -84,8 +84,8 @@
                                 </div>
         <div class="p-2 w-full">
           <div class="">
-            <label for="price" class="leading-7 text-sm text-gray-600">合計金額</label><br>
-            <div class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">{{ props.order[0].total }}円</div>
+            <label for="price" class="leading-7 text-sm text-gray-600">獲得ポイント</label><br>
+            <div class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">{{ props.order[0].total }}ポイント</div>
           </div>
         </div>
         <div class="p-2 w-full">

@@ -45,9 +45,9 @@
                                 <tr>
                                     <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">ID</th>
                                     <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">氏名</th>
-                                    <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">合計金額</th>
+                                    <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">獲得ポイント</th>
                                     <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">ステータス</th>
-                                    <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">購入日</th>
+                                    <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">作業日</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -55,7 +55,7 @@
                                     <td class="px-4 py-3">
                                         <Link :href="route('purchases.show', { purchase: order.id })" class="text-blue-400">{{ order.id }}</Link>
                                     </td>
-                                    <td class="px-4 py-3">{{ order.customername }}</td>
+                                    <td class="px-4 py-3">{{ order.customer_name }}</td>
                                     <td class="px-4 py-3">{{ order.total }}</td>
                                     <td class="px-4 py-3">{{ order.status }}</td>
                                     <td class="px-4 py-3">{{ dayjs(order.created_at).format('YYYY-MM-DD HH:mm:ss') }}</td>
