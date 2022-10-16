@@ -19,7 +19,7 @@
 </script>
 
     <template>
-        <Head title="顧客一覧" />
+        <Head title="メンバー一覧" />
 
         <AuthenticatedLayout>
             <template #header>
@@ -39,6 +39,7 @@
                                     <div>
                                         <input type="text" name="search" v-model="search">
                                         <button class="bg-blue-300 text-white py-2 px-2" @click="searchCustomers">検索</button>
+                                        <p>※カナ入力</p>
                                     </div>
                                 <Link as="button" :href="route('customers.create')" class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">メンバー登録</Link>
                                 <!-- <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Button</button> -->
@@ -48,9 +49,9 @@
                                     <thead>
                                     <tr>
                                         <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">ID</th>
-                                        <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">氏名</th>
-                                        <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">カナ</th>
-                                        <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">電話番号</th>
+                                        <th class="px-5 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">氏名</th>
+                                        <th class="px-6 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">カナ</th>
+                                        <!-- <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">電話番号</th> -->
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -58,9 +59,9 @@
                                         <td class="px-4 py-3">
                                           {{ customer.id }}
                                         </td>
-                                        <td class="px-4 py-3">{{ customer.name }}</td>
-                                        <td class="px-4 py-3">{{ customer.kana }}</td>
-                                        <td class="px-4 py-3">{{ customer.tel }}</td>
+                                        <td class="px-5 py-3">{{ customer.name }}</td>
+                                        <td class="px-6 py-3">{{ customer.kana }}</td>
+                                        <!-- <td class="px-4 py-3">{{ customer.tel }}</td> -->
                                     </tr>
 
                                     </tbody>

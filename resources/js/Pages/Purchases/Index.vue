@@ -1,10 +1,10 @@
 <script setup>
-    import { onMounted,ref } from 'vue'
-    import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
+    import { onMounted,ref } from 'vue';
+    import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue'
     import { Head,Link } from '@inertiajs/inertia-vue3';
     import FlashMessage from '@/Components/FlashMessage.vue'
     import Pagination from '@/Components/Pagination.vue'
-    import { Inertia } from '@inertiajs/inertia'
+    import { Inertia } from '@inertiajs/inertia';
     import dayjs from 'dayjs'
 
     const props = defineProps({

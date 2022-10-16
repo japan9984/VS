@@ -70,13 +70,13 @@
             <input type="text" id="kana" name="kana" v-model="form.kana" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
           </div>
         </div>
-
+<!--
         <div class="p-2 w-full">
           <div class="relative">
             <label for="tel" class="leading-7 text-sm text-gray-600">電話番号</label>
             <input type="text" id="tel" name="tel" v-model="form.tel" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
           </div>
-        </div>
+        </div> -->
 
         <div class="p-2 w-full">
           <div class="relative">
@@ -85,7 +85,7 @@
           </div>
         </div>
 
-        <div class="p-2 w-full">
+        <!-- <div class="p-2 w-full">
           <div class="relative">
             <label for="postcode" class="leading-7 text-sm text-gray-600">郵便番号</label>
             <input type="number" @change="fetchAddress" id="postcode" name="postcode" v-model="form.postcode" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
@@ -116,7 +116,7 @@
             <input type="radio" id="gender2" name="gender" v-model="form.is_selling" value="2" >
             <label for="gender2" class="ml-2 mr-4">その他</label>
           </div>
-        </div>
+        </div> -->
         <div class="p-2 w-full">
           <div class="relative">
             <label for="memo" class="leading-7 text-sm text-gray-600">メモ</label>
@@ -124,7 +124,7 @@
           </div>
         </div>
         <div class="p-2 w-full">
-          <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">顧客登録</button>
+          <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">メンバー登録</button>
         </div>
       </div>
     </div>
