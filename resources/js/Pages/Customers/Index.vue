@@ -37,11 +37,11 @@
                                 <FlashMessage />
                                 <div class="flex pl-4 my-4 lg:w-2/3 w-full mx-auto">
                                     <div>
-                                        <input type="text" name="search" v-model="search">
+                                        <input type="text" name="search" v-model="search" class="mr-2">
                                         <button class="bg-blue-300 text-white py-2 px-2" @click="searchCustomers">検索</button>
                                         <p>※カナ入力</p>
                                     </div>
-                                <Link as="button" :href="route('customers.create')" class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">メンバー登録</Link>
+                                <Link as="button" :href="route('customers.create')" class="mb-5 flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">メンバー登録</Link>
                                 <!-- <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Button</button> -->
                                 </div>
                                 <div class="lg:w-2/3 w-full mx-auto overflow-auto">
